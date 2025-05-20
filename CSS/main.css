@@ -1,0 +1,213 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Navigation */
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a:hover {
+    color: #fcd34d;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('bg-texture.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content button {
+    padding: 0.75rem 1.5rem;
+    background-color: #fcd34d;
+    color: #000;
+    border: none;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-content button:hover {
+    background-color: #facc15;
+  }
+  
+  /* Projects */
+  .projects {
+    padding: 4rem 2rem;
+    background-color: #111;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* About */
+  .about {
+    padding: 4rem 2rem;
+    background-color: #000;
+  }
+  
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .about-container img {
+    width: 250px;
+    border-radius: 12px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Button */
+.about-text button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    background-color: #fcd34d;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .about-text button:hover {
+    background-color: #facc15;
+  }
+  
+  /* Contact */
+  .contact {
+    margin-top: 2rem;
+  }
+  
+  .contact a {
+    color: #fcd34d;
+  }
+  
+  /* Receipts Page */
+  .receipts-page {
+    padding: 4rem 2rem;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .receipt-content {
+    text-align: left;
+    margin-top: 2rem;
+    background: #111;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+
+  /* Scroll animation */
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
