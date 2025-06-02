@@ -181,20 +181,41 @@
   }
   
   /* Receipts Page */
-  .receipts-page {
-    padding: 4rem 2rem;
-    color: #fff;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+  .resume-section {
+    padding: 2rem;
+    background-color: #111010;
   }
   
-  .receipt-content {
-    text-align: left;
-    margin-top: 2rem;
-    background: #111;
+  .resume-card {
+    max-width: 900px;
+    margin: auto;
     padding: 2rem;
-    border-radius: 12px;
+    background: #333333;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  .resume-card h2, .resume-card h3 {
+    color: #FFA500; /* Orange headline */
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume-card a {
+    color: #00BFFF; /* Sky blue links */
+    text-decoration: none;
+  }
+  
+  .resume-card a:hover {
+    color: #FFA500; /* Hover turns orange */
+    text-decoration: underline;
+  }
+  
+  .resume-card ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   /* Scroll animation */
