@@ -10,16 +10,27 @@
 
   <!-- Navigation -->
   <nav class="navbar">
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
     <div class="nav-container">
-      <h1 class="logo">Beni Minyer</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="receipts.html">Receipts</a></li>
+      <h1 class="logo">Minyer</h1>
+      
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+  
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#projects">Project</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="receipts.html">Resume</a></li>
       </ul>
     </div>
   </nav>
+  
+  
 
   <!-- Hero Section -->
   <section class="hero" id="home">
@@ -37,21 +48,26 @@
   <section class="projects" id="projects">
     <h2>Projects</h2>
     <div class="card-grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Project 1" />
-        <h3>Project One</h3>
-        <p>A brief description of the project goes here.</p>
+      <div class="card" onclick="window.open('/Projects/kkd.html', '_blank')">
+        <img src="https://via.placeholder.com/300x200" alt="Konkorazon Designs Project" />
+        <h3>Konkorazon Designs</h3>
+        <p>Branding & Website Development</p>
       </div>
-      <div class="card">
+      
+
+      <div class="card" onclick="window.open('/Projects/foodapp.html', '_blank')">
         <img src="https://via.placeholder.com/300x200" alt="Project 2" />
-        <h3>Project Two</h3>
-        <p>Another cool project with some design work.</p>
+        <h3>Food Rescue</h3>
+        <p>UX/UI</p>
       </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Project 3" />
-        <h3>Project Three</h3>
-        <p>Creative UI and branding for modern web apps.</p>
+      <div class="card" >
+        <a href="https://miny0008.github.io/minyer-scramble/" target="_blank" style="text-decoration: none;">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3" />
+          <h3>Scramble Game</h3>
+          <p>Try to unscramble me :)</p>
+        </a>
       </div>
+    
     </div>
   </section>
 
@@ -68,16 +84,29 @@
         </p>
       </div>
 
-      <button onclick="goToReceipts()">Receipts</button>
+      <button onclick="goToReceipts()">Resume</button>
 
 <div class="contact">
   <h3>Let's stay in touch</h3>
   <p>Email: <a href="mailto:minyer07@gmail.com">minyer07@gmail.com</a></p>
-  <p>Instagram: <a href="https://instagram.com/minyer07" target="_blank">@minyer07</a></p>
 </div>
-    </div>
+
   </section>
 
   <script src="script.js"></script>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+
 </body>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2025 Beni Minyer. All rights reserved.</p>
+    <p>
+      <a href="mailto:minyer07@gmail.com">minyer07@gmail.com</a> 
+    </p>
+  </div>
+</footer>
+
 </html>

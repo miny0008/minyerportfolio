@@ -10,16 +10,27 @@
 <body>
 
   <nav class="navbar">
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
     <div class="nav-container">
-      <h1 class="logo">Beni Minyer</h1>
-      <ul class="nav-links">
+      <h1 class="logo">Minyer</h1>
+      
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+  
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#projects">Project</a></li>
         <li><a href="index.html#about">About</a></li>
-        <li><a href="receipts.html">Receipts</a></li>
+        <li><a href="receipts.html">Resume</a></li>
       </ul>
     </div>
   </nav>
+  
+  
 
   <section class="receipts-page">
     <h2>My Resume</h2>
@@ -32,5 +43,20 @@
     </div>
   </section>
 
+  <script src="script.js"></script>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+
 </body>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2025 Beni Minyer. All rights reserved.</p>
+    <p>
+      <a href="mailto:minyer07@gmail.com">minyer07@gmail.com</a> |
+    </p>
+  </div>
+</footer>
+
 </html>
