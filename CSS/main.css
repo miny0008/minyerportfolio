@@ -217,6 +217,24 @@
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
+  /* Foodapp page Home button */
+  .home-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #f7c948;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: orange;
+    color: white;
+  }
+  
 
   /* Scroll animation */
 .fade-out {
