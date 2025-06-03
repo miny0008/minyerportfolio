@@ -12,7 +12,7 @@ function goToReceipts() {
   const sections = document.querySelectorAll("section");
   
   const options = {
-    threshold: 0.8,
+    threshold: 1,
   };
   
   const observer = new IntersectionObserver(function (entries, observer) {
